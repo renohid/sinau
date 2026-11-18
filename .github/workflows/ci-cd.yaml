@@ -1,3 +1,4 @@
+cat << 'EOF' > .github/workflows/ci-cd.yaml>
 name: CI/CD Pipeline
 
 # 1. Triggers: Run on pushes to main and on any Pull request target main
@@ -52,3 +53,4 @@ build-and-push:
           &{{ secret.DOCKER_USERNAME }}/my-app:latest
           &{{ secret.DOCKER_USERNAME }}/my-app{{github.sha}}
 
+EOF

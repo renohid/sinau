@@ -15,3 +15,9 @@ Automated CI/CD pipeline built with **GitHub Actions**, **Pytest**, and **Docker
 docker pull renohid/my-app:latest
 docker run --rm renohid/my-app:latest
 
+**MacOS (`amd64`):**
+```bash
+docker pull --platform linux/amd64 renohid/my-app:latest
+docker run --rm --platform linux/amd64 renohid/my-app:latest
+
+
